@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Brick(BB)</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+       
+        <div>
+            <h1>Break-Brick Entertainment</h1>
+
+<!-- pour dessiner des graphiques et des animations -->
+ <canvas id="break" width="800" height="600"></canvas> 
+ 
+ <!-- TIMER ELEMENT FOR SHOWING TIME LEFT IN THE GAME -->
+       <div id ="timer"   style="
+       background-color: black;
+       width: 100px;
+       height: 50px;
+       flex-shrink: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+       border: 4px solid white;
+       margin-left: 40%;
+     " >
+        Timer:   1000
+       </div> 
+
+    </div>
+        
+        
+    <div class="controls">
+        <!-- BUTTONS FOR PLAYING,PAUSING AND RESUMING -->
+       <button id="play-button" onclick="play()"><i class="fa fa-play"></i>Play/Reset</button><br>
+       <button id="play-button" onclick="pause()" ><i class="fa fa-pause"></i>Pause</button><br>
+       <button id="play-button" onclick="resume()" ><i class="fa fa-play"></i>Resume</button>
+
+    
+    </div>
+
+    <div class="score"> 
+        <table id="scores-list">
+            <h2>Classement score</h2>
+       
+      </table>
+    
+      </div>
+    
+      
+
+     
+</div>
+
+    <script type="text/javascript" src="brickbreaker.js"></script>
+</body>
+</html>
+
+
+
